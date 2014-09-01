@@ -1,0 +1,206 @@
+@import url('normalizr.css');
+@import url(http://fonts.googleapis.com/css?family=Rochester);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+/*-------------MAIN STYLES-------------------------*/
+body{
+	background: #F7F7F7;
+}
+.wrapper{
+	margin: 0 auto;
+	width: 1024px;
+}
+p, h1, h2, h3{
+	font-family: 'Roboto', sans-serif;
+}
+/*-------------HEADER-------------------------*/
+header a, header h1{
+	display: inline-block;
+	vertical-align: middle;
+}
+h1{
+	font-family: 'Rochester', cursive;
+	font-size: 6em;
+}
+/*-------------NAV-------------------------*/
+.color{
+	border-bottom: 4px solid;
+}
+.home{color: #3DB5E2;}
+.tech{color: #1BCF24;}
+.gaming{color: #FD6868;}
+.science{color: #EB7034;}
+.culture{color: #9749D6;}
+.dev{color: #3D87E2;}
+
+.home:hover{background: #3DB5E2;color: #fff;}
+.tech:hover{background: #1BCF24;}
+.gaming:hover{background: #FD6868;}
+.science:hover{background: #EB7034;}
+.culture:hover{background: #9749D6;}
+.dev:hover{background: #3D87E2;}
+
+.cor-home{background: #3DB5E2;}
+.cor-tech{background: #1BCF24;}
+.cor-gaming{background: #FD6868;}
+.cor-science{background: #EB7034;}
+.cor-culture{background: #9749D6;}
+.cor-dev{background: #3D87E2;}
+
+nav{
+	width: 100%;
+	background: #212121;
+	position: relative;
+
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px 30px;
+	margin-left: -4px;
+	font-size: 1.2em;
+	cursor: pointer;
+	-moz-transition    : all 0.5s;
+	-o-transition      : all 0.5s;
+	-webkit-transition : all 0.5s;
+	transition         : all 0.5s;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.user{
+	position: absolute;
+	right: 0;
+	top:0;
+	color: #fff;
+}
+.user:hover{
+	background: #4B4B4B;
+	border-bottom: 3px solid #4B4B4B; 
+}
+
+.user i, .info-author i, .user-menu li a i{
+	line-height: 1.2;
+}
+
+ul li ul.user-menu{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li ul.user-menu li{
+	display: block;
+	width:100px;
+	padding: 10px;
+	text-align: left;
+	font-size: 1em;
+	border-bottom: 1px solid #1e1e1e;
+}
+ul li ul.user-menu li:hover{
+	background: #373737;
+	
+}
+/*-------------art main-------------------------*/
+#main-news{
+	background: url('../img/alien.png') top left no-repeat; 
+	height: 316px;
+	position: relative;
+	margin: 20px 0 40px 0;
+}
+.corner{
+	position: absolute;
+	color: #fff;
+	padding: 5px 10px;
+	width: 120px;
+	font-size: 1.1em;
+	
+}
+.news-info-main{
+	width: 680px;
+	right:0;
+	height: 276px;
+	position: absolute;
+	padding: 20px 15px; 
+}
+.news-info-main:before{
+	border-right: 70px solid rgb(250,250,250);
+	border-top: 318px solid transparent;
+	bottom: 0;
+	content: "";
+	position: absolute;
+	right: 100%;
+
+}
+
+.read-more{
+	text-decoration: none;
+	color: #fff;
+	padding:10px;
+	background: #45B9F1;
+	text-align: center;
+	display: block;
+	margin-top: 10px;
+	border-bottom:3px solid #1093D1;
+}
+.main-read-more{
+	width: 40%;
+	position: absolute;
+	right: 0;
+}
+
+.main-read-more:hover, .read-more:hover{
+	background: #1093D1;
+	-moz-transition    : all 0.5s;
+	-o-transition      : all 0.5s;
+	-webkit-transition : all 0.5s;
+	transition         : all 0.5s;
+}
+
+/*-------------news-------------------------*/
+.news{
+	width: 100%;
+}
+.row3{
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	min-width: 305px;
+	margin-left: 3%;
+}
+.info-author{
+	border-top: 1px solid #000;
+	border-bottom: 5px solid #626262;
+}
+.info-author p{
+	display: inline-block;
+	vertical-align: middle;
+	color: #6E6E6E;
+	margin-right: 10px;
+}
+.info-author i{
+	margin-right: 10px;
+
+}
+/*-------------FOOTER-------------------------*/
+footer#bottom{
+	background: #333333;
+	padding: 30px 0;
+	margin-top: 20px;
+}
+footer#bottom p{
+	color: #fff;
+	font-size: 1.3em;
+	margin: 0;
+	text-align: center;
+}
+
+.fixed{
+	width: 1024px;
+	position: fixed;
+	top: 0;
+	height: 47px;
+	z-index: 100;
+}
